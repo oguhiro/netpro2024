@@ -27,10 +27,9 @@ public class HowOldAreYou {
 
 			int age = Integer.parseInt(line);
 
-			while(true){
 			if(age < 0 || age >= 120){
 				System.out.println("年齢を再入力せよ");
-				break;
+				continue;
 			}
 
 
@@ -61,11 +60,11 @@ public class HowOldAreYou {
 						eraYear -= 2018;
 						break;
 				}
-				System.out.println("あなたの元号は" + era  + eraYear);
+				System.out.println("あなたの元号は" + era  + eraYear + "年");
 		
 				}
 			}
-		}
+		
 			
 		catch(IOException e) {
 			System.out.println(e);
